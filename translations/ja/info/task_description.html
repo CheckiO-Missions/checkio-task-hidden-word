@@ -1,4 +1,4 @@
-<style type="text/css">
+﻿<style type="text/css">
     .story img {
         float: left;
         /*padding: 10px;*/
@@ -16,7 +16,7 @@
     <img src="{{MEDIA}}jabberwock_sepia.png" width="360px"/>
 </div>
 <div class="story" style="padding-left: 20px; margin-bottom: 0">
-    <h5>JABBERWOCKY</h5>
+    <h5>ジャバウォック</h5>
 
     <p>
         'Twas brillig, and the slithy toves<br>
@@ -67,8 +67,13 @@
         And the mome raths outgrabe.
     </p>
 
+    <p>
+        (※訳注: 作者による造語が多数含まれています。
+        詳細は<a href='https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A3%E3%83%90%E3%82%A6%E3%82%A9%E3%83%83%E3%82%AF%E3%81%AE%E8%A9%A9'>
+        Wikipedia「ジャバウォックの詩」</a>を参照)
+
     <p style="float: right">
-        "Through the Looking-Glass." Lewis Carroll
+        「鏡の国のアリス」ルイス・キャロル
     </p>
 
     <p style="clear: both;"></p>
@@ -82,44 +87,51 @@
         -How many would appear?
     </p>
 
+    <p>(※訳<br>
+       「塀の上のリンゴを夢見る<br>
+       それもしばしば夢見る<br>
+       私は全て数えることを夢見る<br>
+       --いくつ見つけられるかな?」)
+    </p>
+
     <p style="float: right">
-        "Puzzles from Wonderland." Lewis Carroll
+        「不思議の国からのパズル」ルイス・キャロル
     </p>
 </div>
 
 
 <p>
-    Nicola has solved this puzzle (and I am sure that you will do equally well).
-    To be prepared for more such puzzles, Nicola wants to invent a method to search for words inside poetry.
-    You can help him create a function to search for certain words.
+    ニコラはこのパズルを解いた。(きっとあなたも解けたはずだ)
+    さらに同様のパズルを解くにあたってニコラは詩の中から単語を探す方法を発明したいと思った。
+    あなたはある単語を探す関数を作ることで彼を手伝うことができる。
 
 </p>
 
 <p>
-    You are given a rhyme (a multiline string), in which lines are separated by "newline" (\n).
-    Casing does not matter for your search, but whitespaces should be removed before your search.
-    You should find the word inside the rhyme in the horizontal (from left to right) or vertical (from up to down) lines.
-    For this you need envision the rhyme as a matrix (2D array).
-    Find the coordinates of the word in the cut rhyme (without whitespaces).
+    あなたは韻文(複数行の文字列)が与えられる。各行は改行コード(\n)で分割されている。
+    探索において文字の大小は考慮しない。しかし事前に空白は取り去ること。
+    あなたは韻文の中の行(左から右)または列(上から下)より単語を見つけねばならない。
+    そのため韻文を行列(2次元の配列)と見なす必要がある。
+    空白を取り去った韻文中からその単語の座標を見つけること。
 </p>
 <p>
-    The result must be represented as a list -- <strong>[row_start,column_start,row_end,column_end]</strong>, where
+    解答はリストで表すこと--<strong>[開始行, 開始列, 終了行, 終了列], </strong>
 </p>
 <ul>
     <li>
-        <strong>row_start</strong> is the line number for the first letter of the word.
+        <strong>開始行</strong> は単語の最初の行番号
     </li>
     <li>
-        <strong>column_start</strong> is the column number for the first letter of the word.
+        <strong>開始列</strong> は単語の最初の列番号
     </li>
     <li>
-        <strong>row_end</strong> is the line number for the last letter of the word.
+        <strong>終了行</strong> は単語の最後の行番号
     </li>
     <li>
-        <strong>column_end</strong> is the column number for the last letter of the word.
+        <strong>終了列</strong> は単語の最後の列番号
     </li>
     <li>
-        Counting of the rows and columns start from 1.
+        行と列は各々1から数え始めること(0ではない)
     </li>
 
 </ul>
@@ -130,17 +142,17 @@
 </p>
 
 <p>
-    <strong>Input: </strong> Two arguments. A rhyme as a string and a word as a string (lowercase).
+    <strong>入力: </strong> 韻文(string型)と小文字からなる単語(string型)
 </p>
 
 <p>
-    <strong>Output: </strong> The coordinates of the word.
+    <strong>出力: </strong> 単語の座標。
 </p>
 
 
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>例:</strong>
     </p>
     <pre class="brush: python">
 checkio(u"""DREAMING of apples on a wall,
@@ -159,12 +171,12 @@ And burbled as it came!""", "noir") == [4, 16, 7, 16]
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    This task shows the variance of the positional ciphers.
-    With this cipher you can hide a message within a book which allows you and receiver to send these coded messages.
+    <strong>どのように使われるか: </strong>
+    このタスクは暗号文の位置を分散させるやり方を表わしている。
+    このやり方で本の中に暗号を隠して受け手とやり取り可能である。
 </p>
 <p>
-    <strong>Precondition:</strong> The word is given in lowercase<br>
-    0 < |word| < 10<br>
-    0 < |rhyme| < 300
+    <strong>事前条件:</strong> 単語は小文字で与えられる。<br>
+    0 < |単語| < 10<br>
+    0 < |韻文| < 300
 </p>
