@@ -7,78 +7,81 @@
         /*box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);*/
         /*-moz-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);*/
         /*-webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);*/
-
     }
 </style>
-
 
 <div class="story" style="margin-bottom: 15px">
     <img src="{{MEDIA}}jabberwock_sepia.png" width="360px"/>
 </div>
 <div class="story" style="padding-left: 20px; margin-bottom: 0">
-    <h5>JABBERWOCKY</h5>
+    <h5>Der Jammerwoch</h5>
 
     <p>
-        'Twas brillig, and the slithy toves<br>
-        Did gyre and gimble in the wabe;<br>
-        All mimsy were the borogoves,<br>
-        And the mome raths outgrabe.
+        Es brillig war. Die schlichte Toven<br>
+        Wirrten und wimmelten in Waben;<br>
+        Und aller-mümsige Burggoven<br>
+        Die mohmen Räth' ausgraben.
     </p>
 
     <p>
-        'Beware the Jabberwock, my son!<br>
-        The jaws that bite, the claws that catch!<br>
-        Beware the Jubjub bird, and shun<br>
-        The frumious Bandersnatch!'
+        »Bewahre doch vor Jammerwoch!<br>
+        Die Zähne knirschen, Krallen kratzen!<br>
+        Bewahr' vor Jubjub-Vogel, vor<br>
+        Frumiösen Banderschntzchen!«
     </p>
 
     <p>
-        He took his vorpal sword in hand:<br>
-        Long time the manxome foe he sought--<br>
-        So rested he by the Tumtum tree,<br>
-        And stood awhile in thought.
+        Er griff sein vorpals Schwertchen zu,<br>
+        Er suchte lang das manchsan' Ding;<br>
+        Dann, stehend unterm Tumtum Baum,<br>
+        Er an-zu-denken-fing.
     </p>
 
     <p>
-        And as in uffish thought he stood,<br>
-        The Jabberwock, with eyes of flame,<br>
-        Came whiffling through the tulgey wood,<br>
-        And burbled as it came!
+        Als stand er tief in Andacht auf,<br>
+        Des Jammerwochen's Augen-feuer<br>
+        Durch tulgen Wald mit Wiffek kam<br>
+        Ein burbelnd Ungeheuer!
     </p>
 
     <p>
-        One, two! One, two! And through and through<br>
-        The vorpal blade went snicker-snack!<br>
-        He left it dead, and with its head<br>
-        He went galumphing back.
+        Eins, Zwei! Eins, Zwei! Und durch und durch<br>
+        Sein vorpals Schwert zerschnifer-schnück,<br>
+        Da blieb es todt! Er, Kopf in Hand,<br>
+        Geläumfig zog zurück.
     </p>
 
     <p>
-        'And hast thou slain the Jabberwock?<br>
-        Come to my arms, my beamish boy!<br>
-        O frabjous day! Callooh! Callay!'<br>
-        He chortled in his joy.
+        »Und schlugst Du ja den Jammerwoch?<br>
+        Umarme mich, mien Böhm'sches Kind!<br>
+        O Freuden-Tag! O Halloo-Schlag!«<br>
+        Er schortelt froh-gesinnt.
     </p>
 
     <p>
-        'Twas brillig, and the slithy toves<br>
-        Did gyre and gimble in the wabe;<br>
-        All mimsy were the borogoves,<br>
-        And the mome raths outgrabe.
+        Es brillig war. Die schlichte Toven<br>
+        Wirrten und wimmelten in Waben;<br>
+        Und aller-mümsige Burggoven<br>
+        Die mohmen Räth' ausgraben.
     </p>
 
     <p>
-        "Through the Looking-Glass." Lewis Carroll
+        "Alice hinter den Spiegeln" - Lewis Carroll<br>
+        Übersetzung von Robert Scott
     </p>
-
 </div>
 
 <div class="story" style="text-indent: 0; padding-left: 20px;">
+    <p>
+        Ab jetzt lassen wir die Beispieltexte in ihrer englischen Form, so wie sie Nicola
+        verarbeitet, dann kannst Du ihm besser helfen.
+    </p>
 
-    <p>DREAMING of apples on a wall,<br>
+    <p>
+        DREAMING of apples on a wall,<br>
         And dreaming often, dear,<br>
         I dreamed that, if I counted all,<br>
-        -How many would appear?
+        - How many would appear?
     </p>
 
     <p>
@@ -86,41 +89,44 @@
     </p>
 </div>
 
-
 <p>
-    Nicola has solved this puzzle (and I am sure that you will do equally well).
-    To be prepared for more such puzzles, Nicola wants to invent a method to search for words inside poetry.
-    You can help him create a function to search for certain words.
-
+    Nicola hat das Rätsel bereits gelöst (und ich bin sicher, dass Du es ebenso gut lösen
+    wirst). Um auf weitere solcher Rätsel vorbereitet zu sein, will Nicola eine Methode
+    entwickeln, die Worte in Gedichten sucht. Du kannst ihm helfen eine Funktion zu
+    schreiben, die nach bestimmten Wörtern sucht.
 </p>
 
 <p>
-    You are given a rhyme (a multiline string), in which lines are separated by "newline" (\n).
-    Casing does not matter for your search, but whitespaces should be removed before your search.
-    You should find the word inside the rhyme in the horizontal (from left to right) or vertical (from up to down) lines.
-    For this you need envision the rhyme as a matrix (2D array).
-    Find the coordinates of the word in the cut rhyme (without whitespaces).
+    Vorgegeben wird ein Reim (als mehrzeiliger String), in dem Zeilen durch den "Newline-Character" (\n)
+    getrennt werden.
+    Groß-Kleinschreibung spielt für Deine Suche keine Rolle, aber Leerzeichen solltest Du
+    vorher entfernen.
+    Du sollst das Wort in den horizontalen (von links nach rechts) oder vertikalen
+    (von oben nach unten) Linien des Reims finden.
+    Dazu musst Du Dir den Reim als Matrix (2-D-Array) vorstellen.
+    Finde die Koordinaten des Wortes im beschnittenen (ohne Leerzeichen) Reim.
 </p>
+
 <p>
-    The result must be represented as a list -- <strong>[row_start,column_start,row_end,column_end]</strong>, where
+    Das Ergebnis muss als Liste dargestellt werden -- <strong>[row_start,column_start,row_end,column_end]</strong>, wobei
 </p>
+
 <ul>
     <li>
-        <strong>row_start</strong> is the line number for the first letter of the word.
+        <strong>row_start</strong> die Zeilennummer des ersten Buchstabens des gesuchten Wortes ist.
     </li>
     <li>
-        <strong>column_start</strong> is the column number for the first letter of the word.
+        <strong>column_start</strong> ist die Spaltennummer des ersten Buchstabens des Wortes.
     </li>
     <li>
-        <strong>row_end</strong> is the line number for the last letter of the word.
+        <strong>row_end</strong> ist die Zeilennummer des letzten Buchstabens des Wortes.
     </li>
     <li>
-        <strong>column_end</strong> is the column number for the last letter of the word.
+        <strong>column_end</strong> ist die Spaltennummer des letzten Buchstabens des Wortes.
     </li>
     <li>
-        Counting of the rows and columns start from 1.
+        Die Zählung der Zeilen und Spalten beginnt bei 1.
     </li>
-
 </ul>
 
 <p style="text-align: center;">
@@ -129,41 +135,43 @@
 </p>
 
 <p>
-    <strong>Input: </strong> Two arguments. A rhyme as a string and a word as a string (lowercase).
+    <strong>Eingabe: </strong>Zwei Argumente. Ein Reim als String und ein Wort als String (klein geschrieben).
 </p>
 
 <p>
-    <strong>Output: </strong> The coordinates of the word.
+    <strong>Ausgabe: </strong>Die Koordinaten des Wortes.
 </p>
-
 
 <div class="for_info_only">
     <p>
-        <strong>Example:</strong>
+        <strong>Beispiele:</strong>
     </p>
     <pre class="brush: python">
-checkio(u"""DREAMING of apples on a wall,
-And dreaming often, dear,
-I dreamed that, if I counted all,
--How many would appear?""", u"ten") == [2, 14, 2, 16]
-checkio("""He took his vorpal sword in hand:
-Long time the manxome foe he sought--
-So rested he by the Tumtum tree,
-And stood awhile in thought.
-And as in uffish thought he stood,
-The Jabberwock, with eyes of flame,
-Came whiffling through the tulgey wood,
-And burbled as it came!""", "noir") == [4, 16, 7, 16]
+        checkio(u"""DREAMING of apples on a wall,
+        And dreaming often, dear,
+        I dreamed that, if I counted all,
+        -How many would appear?""", u"ten") == [2, 14, 2, 16]
+
+        checkio("""He took his vorpal sword in hand:
+        Long time the manxome foe he sought--
+        So rested he by the Tumtum tree,
+        And stood awhile in thought.
+        And as in uffish thought he stood,
+        The Jabberwock, with eyes of flame,
+        Came whiffling through the tulgey wood,
+        And burbled as it came!""", "noir") == [4, 16, 7, 16]
     </pre>
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    This task shows the variance of the positional ciphers.
-    With this cipher you can hide a message within a book which allows you and receiver to send these coded messages.
+    <strong>Wozu das gut ist: </strong>
+    Diese Aufgabe zeigt Dir eine Variante der <a href="https://de.wikipedia.org/wiki/Buch-Verschl%C3%BCsselung">Buch- oder auch Ottendorf-Verschlüsselung</a>.
+    Bei dieser Verschlüsselungsvariante dient ein bestimmtes Buch oder Schriftstück als Schlüssel.
+    Um welches Buch es sich dabei genau handelt, wissen natürlich nur Eingeweihte.
 </p>
+
 <p>
-    <strong>Precondition:</strong> The word is given in lowercase<br>
+    <strong>Bedingungen:</strong> Das Wort wird in Kleinbuchstaben angegeben.<br>
     0 < |word| < 10<br>
     0 < |rhyme| < 300
 </p>
