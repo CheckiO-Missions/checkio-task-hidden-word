@@ -15,3 +15,4 @@ And as in uffish thought he stood,
 The Jabberwock, with eyes of flame,
 Came whiffling through the tulgey wood,
 And burbled as it came!""", "noir") == [4, 16, 7, 16]
+print("Coding complete? Click 'Check' to earn cool rewards!")
